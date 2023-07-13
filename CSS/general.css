@@ -152,7 +152,7 @@ Medium: 11px
     font-weight: 600;
     padding: 1.6rem 3.2rem;
     border-radius: 0.9rem;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
   }
   
   .btn--full:link,
