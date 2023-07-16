@@ -92,9 +92,17 @@ Medium: 11px
     display: grid;
     row-gap: 9.6rem;
     column-gap: 4.8rem;
-
+    margin-bottom: 9.6rem;
   }
   
+  /* this only adds margin to grid sections that arent the last child*/
+
+  .grid:not(:last-child){
+    margin-bottom: 9.6rem;
+  }
+
+
+
   .grid--2-cols {
     grid-template-columns: repeat(2, 1fr);
   }
