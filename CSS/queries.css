@@ -1,0 +1,82 @@
+
+/* em is better for max-width media queres .1em is 16px so divide screen width in px by 16 eg 1350/15 */
+
+/* BELOW 1344px - SMALLER LAPTOPS */
+
+@media(max-width: 84em){
+    .hero{
+        max-width: 120rem;
+    }
+
+    .main-nav-list{
+        gap: 3.2rem;
+    }
+
+    .heading-primary{
+        font-size: 4.4rem;
+    }
+
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }  
+
+    .testimonials{
+        row-gap: 8.4rem;
+    }
+
+    .gallery-item--media-laptop{
+        display: none;
+    }
+}
+
+/* BELOW 1200px - TYPICAL LANDSCAPE TABLET BREAKPOINT */
+
+@media(max-width: 75em){
+
+    html{
+        /* change to 9px equivalent  - 9px/16px */
+        font-size: 56.25%;
+    }
+
+    .grid{
+        column-gap: 4.8rem;
+        row-gap: 6.4rem;
+    }
+
+    .heading-secondary{
+        font-size: 3.6rem;
+    }
+
+    .heading-tertiary{
+        font-size: 2.4rem;
+    }
+
+    .header{
+        padding: 0 3.2rem;
+    }
+
+    .hero {
+        gap: 4.8rem
+    }
+
+    .gallery-item--media-tablet{
+        display: none;
+    }
+
+    .testimonial-container{
+        padding: 9.6rem 3.2rem;
+      }
+}
+
+/* PUTTING TWO ADDITIONAL IMAGES BACK IN GALLER at 950px  */
+
+@media(max-width: 59em){
+    .gallery-item--media-tablet{
+        display:contents;
+    }
+}
+
+
+
+
+  
