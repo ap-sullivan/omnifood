@@ -4,6 +4,7 @@
 /* HEADER SECTION */
 
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,6 +54,27 @@
 .main-nav-link.nav-cta:active {
   background-color: #ef711f;
 }
+
+/* MOBILE NAVIGATION */
+
+.btn-mobile-nav{
+  display: none;
+border: none;
+background: none;
+cursor: pointer;
+}
+
+.icon-mobile-nav{
+height: 4.8rem;
+width: 4.8rem;
+color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"]{
+display: none; 
+}
+
+
 
 /* HERO SECTION */
 
