@@ -114,8 +114,7 @@
       .meal-content{
         padding: 2.4rem 3.2rem 3.2rem 3.2rem;
       }
-    
-
+      
     /* PUTTING THE TWO ADDITIONAL GALLERY IMAGES BACK IN GALLERY at 950px  */
 
     .gallery-item--media-tablet, .gallery-item--media-laptop{
@@ -146,7 +145,7 @@
     .btn--form{
         margin-top: 1.2rem;
     }
-
+  }
     /* 704px breakpoint small tablets / large phone  */
 
     @media (max-width: 44em){
@@ -252,8 +251,7 @@
 
             .cta-text-box{
                 padding: 3.2rem;
-            }
-                        
+            }     
             }
 
 
@@ -290,8 +288,6 @@
 
         /* 3) hjide from screen readers */
         visibility: hidden;
-
-
     }
 
     /* CSS that gets added when open-nav is added as a class using javascript */
@@ -320,11 +316,5 @@
     .nav-open .icon-mobile-nav[name="menu-outline"]{
         display: none; 
     }
-}
-
-
-
-
-
 
   
