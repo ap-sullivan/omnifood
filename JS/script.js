@@ -33,10 +33,48 @@ allLinks.forEach(function(link){
 if (href === "#") window.scrollTo({
   top: 0, behavior: "smooth",
 })
+
+if (href !== "#" && href.startsWith("#")){
+
+  const sectionEl = document.querySelector(href);
+  sectionEl.scrollIntoView({behavior: "smooth"
+  })
+}
+
+// close mobile nav after click on link
+
+if (link.classList.contains('main-nav-link')){
+  headerEl.classList.toggle('nav-open')
+}
   })
 })
 
 
+// Sticky Navigation
+
+const sectionHeroEl = document.querySelector(".section-hero")
+
+const obs = new IntersectionObserver(function(entries){
+const ent = entries[0];
+
+if (ent.isIntersecting === false){
+  document.body.classList.add('sticky')
+}
+
+if (ent.isIntersecting === true){
+  document.body.classList.remove('sticky')
+}
+
+},
+
+{
+  // in the viewport
+  root: null,
+  threshhold: 0,
+  rootMargin: '-80px' 
+
+})
+obs.observe(sectionHeroEl)
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
